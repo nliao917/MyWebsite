@@ -11,6 +11,12 @@ html,body {
     font-color:rgba(225,225,225,0.9);
   }
 
+@media screen and (max-width: 1000px) {
+  h1 {
+    color: yellow;
+  }
+}
+
 .full-size {
   height:100%;
   width:100%;
@@ -58,7 +64,6 @@ html,body {
   background-image: url('img/2.png');
   background-repeat: repeat-y;
   background-size: contain;
-
 
 }
 
@@ -189,8 +194,18 @@ ul {
 
 .skills:nth-of-type(1) {
     width:30%;
-    font-size: 1.5rem;
 } 
+
+.skills:nth-of-type(1) li{
+  border-radius: 15px;
+  margin-bottom: 0.3rem;
+/*  text-align: left;
+  display: block;
+  position: absolute;
+  border-color: rgb(255,255,255);
+  border-radius*/*/
+}
+
 
 .skills:nth-of-type(2) {
     width:70%;
@@ -198,65 +213,56 @@ ul {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-top: 0.8rem;
-    margin-right: 5rem;
+    border-radius: 1rem;
+    border-color: rgb(255,255,255);
+    color: rgba(0,0,0,0);
 } 
 
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
 
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
 
-.bar{
+.skills:nth-of-type(2) li {
   background-color: #1e2224;
   border-radius: 15px;
   margin-bottom: 0.3rem;
-  color: rgba(225,225,225,0);
-  text-align: left;
 }
-.bar::before{
+
+.hidden {
+  background: linear-gradient(green 40%, transparent 40%) no-repeat;
+
+  }
+/*.bar{
   content:  attr(data-skill);
   background-color: rgba(225,225,225,0.7);
   display: inline-block;
   border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+}*/
+
+@keyframes in-out {
+  0% {
+    width: 0;
+  }
+  1000% {
+    width: 100vw;
+  }
 }
 
 
-.bar.learning::before{
-  width: calc(20% - 10px);
-}
-.bar.basic::before{
+.basic1 {
   width: calc(40% - 10px);
+  animation: 1s in-out forwards;
 }
-.bar.intermediate::before{
+
+.intermediate1 {
   width: calc(60% - 10px);
+  animation: 1s in-out forwards;
 }
-.bar.advanced::before{
+.advanced1 {
   width: calc(80% - 10px);
+  animation: 1s in-out forwards;
 }
-.bar.expert::before{
+.expert1 {
   width: calc(100% - 10px);
+  animation: 1s in-out forwards;
 }
 
 
