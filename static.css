@@ -11,11 +11,6 @@ html,body {
     font-color:rgba(225,225,225,0.9);
   }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    color: yellow;
-  }
-}
 
 .full-size {
   height:100%;
@@ -295,4 +290,98 @@ ul {
     text-decoration: none;
     font-family:'Kdam Thmor Pro', cursive;>
   }
+
+@media screen and (max-width: 1300px) {
+
+#projects .full-size-content {
+  height: 100%;
+}
+
+#skills .content {
+  height: 15%;
+}
+
+#projects .content {
+  height: 15%;
+}
+
+#end .nav-contact {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0;
+}
+#end .content-two {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#end content {
+  padding-top: 10%;
+
+}
+
+.full-size:nth-of-type(5) {
+  /*background-color: #1e2224;*/
+  background-image: url('img/3.jpeg');
+  height :100%;
+}
+
+
+.full-size-content .content {
+  height:20% ;
+}
+
+.full-size-content {
+  height:100%;
+  width:100%;
+  margin: auto;
+  overflow:hidden; /* or overflow:auto; if you want scrollbars */
+  position: relative;
+  background-color: #1e2224;
+  bckground-attachment: fixed,scroll;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+
+}
+
+@media screen and (max-width: 650px) {
+  .full-size:nth-of-type(2) {
+    background-image: url('img/3.jpeg');
+    background-size: cover;
+
+  }
+
+  .full-size:nth-of-type(6) {
+    background-image: url('img/3.jpeg');
+    background-size: cover;
+
+  }
+
+  .navbar {
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-top: 5%;
+    margin: 0;
+
+}
+
+#skills .content {
+  padding: 0px;
+  margin: 0px;
+}
+
+
+#start .half-size {
+  height: 70%;
+  justify-content: space-evenly;
+}
+
+}
    
